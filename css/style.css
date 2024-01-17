@@ -1,0 +1,143 @@
+body {
+    background-color: lightgray;
+}
+
+.header{
+    /*height: 100px;
+    width: auto;*/
+    background-color: blue;
+    border: 3px solid blue;
+    text-align: center;
+}
+
+.header h1 {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.header h2 {
+    color: lightgray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.heading {
+    display: inline-block;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.heading h1{
+    margin-bottom: 8px;
+}
+
+.heading p{
+    margin: 0px;
+}
+
+#Persegi{
+    width: 95%;
+    text-align: center;
+    background-color: blue;
+    color: white;
+    border: 2px solid blue;
+    height: 32px;
+}
+
+button{
+    width: auto;
+    margin: 10px 0px 10px 0px;
+    border: none;
+    background-color: white;
+}
+
+.button1:hover{
+    background-color: blue;
+    width: 100%;
+    border: 8px solid blue;
+}
+
+.button2:hover{
+    background-color: blue;
+    width: 100%;
+    border: 8px solid blue;
+}
+
+.page {
+    width: 100%;
+    background-color: blue;
+    border: 3px solid blue;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.page h1 {
+    color: white;
+}
+
+.work {
+    width: 100%;
+    height: 100%;
+    border: 3px solid blue;
+}
+
+.work h3 {
+    margin: 0px;
+    margin-bottom: 25px;
+}
+
+#temaRumus{
+    text-align: left;
+    margin-left: 10px;
+}
+
+.field{
+    width: 100%;
+    height: 100%;
+    border: 1px solid grey;
+    margin-top: 25px;
+}
+
+#sisi {
+    width: 95%;
+    border-radius: 12px;
+    border: 2px solid lightgray;
+    height: 32px;
+}
+
+.work .keteranganRumus {
+    text-align: left;
+    margin-left: 10px;
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.field #tombolHasil {
+    margin: 8px 0px 8px 0px;
+    border: 12px solid blue;
+    background-color: blue;
+    border-radius: 12px;
+    color: white;
+    size: 10px;
+}
+
+.field #tombolHasil:active {
+    background-color: blue;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}

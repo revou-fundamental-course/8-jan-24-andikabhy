@@ -4,8 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>hello World!</h1>
+  
+    <div class="header">
+        <h1>Katik</h1>
+        <sub><h2>Kalkulator Matematik</h2></sub>
+    </div>
+
+    <div class="container">
+        <div class="heading">
+            <h1>Wellcome Katik</h1>
+            <p>Hai Sobat! Selamat Datang di Katik :|</p>
+            <p>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
+        </div>
+        <br>
+        <button class="button1" onclick="temaLuas()">Persegi</button>
+        <br>
+        <button class="button2" onclick="temaPanjang()">P, Panjang</button>
+        <form action="" id="myPage">
+        <div class="page">
+            <h1 id="temaHitung">Luas Persegi</h1>
+        </div>
+        <div class="work">
+            <img src="bujur sangkar.png" alt="Bujur Sangkar" width="250px" height="250px" style="margin-top: 30px;">
+            <h3>Bujur Sangkar</h3>
+            <p id="temaRumus">Rumus Luas Persegi Yaitu : </p>
+            <p id="rumus">L = S x S</p>
+            <span class="keteranganRumus">
+                <p>Di mana : </p>
+                <p id="Keterangan">L = Luas </p>
+                <p>S = Sisi </p>
+            </span>
+            <div class="field">
+                <h1 id="temaDua">Hitung Luas Persegi</h1>
+                <input type="number" name="sisi" id="sisi" placeholder="Nilai sisi"><br>
+                <button id="tombolHasil" onclick="Hitung()">click</button>
+                <br><br><br><br>
+            </div>
+        </div>
+    </form>
+    </div>
 </body>
+<script src="js/script.js"></script>
 </html>
