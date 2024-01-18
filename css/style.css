@@ -83,7 +83,7 @@ input{
     margin-left: 10px;
 }
 
-.field #result{
+#result{
     text-align: left;
     margin-left: 20px;
     margin-top: 10px;
@@ -114,7 +114,7 @@ p {
     padding: 0px;
 }
 
-.field #tombolHasil {
+#tombolHasil {
     margin: 8px 0px 8px 0px;
     border: 12px solid blue;
     background-color: blue;
@@ -123,13 +123,13 @@ p {
     size: 10px;
 }
 
-.field #tombolHasil:active {
+#tombolHasil:active {
     background-color: blue;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
 
-.field #ulang {
+ #ulang {
     margin: 8px 0px 8px 0px;
     border: 12px solid orange;
     background-color: orange;
@@ -139,7 +139,7 @@ p {
     float: right;
 }
 
-.field #ulang:active {
+#ulang:active {
     background-color: orange;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
