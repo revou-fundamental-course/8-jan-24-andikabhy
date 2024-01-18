@@ -20,15 +20,18 @@
             <p>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
         </div>
         <br>
-        <button class="button1" onclick="temaLuas()">Persegi</button>
+        <label> 
+            <input id="button1" type="radio" onclick="temaLuas()" name="calculationType" value="luas" checked>Persegi
+        </label>
         <br>
-        <button class="button2" onclick="temaPanjang()">P, Panjang</button>
-        <form action="" id="myPage">
+        <label >
+            <input id="button2" type="radio" onclick="temaPanjang()" name="calculationType" value="keliling">P, Keliling
+        </label>
         <div class="page">
             <h1 id="temaHitung">Luas Persegi</h1>
         </div>
         <div class="work">
-            <img src="bujur sangkar.png" alt="Bujur Sangkar" width="250px" height="250px" style="margin-top: 30px;">
+            <img src="bujur sangkar.png" alt="Bujur Sangkar" width="210px" height="210px" style="margin-top: 30px;">
             <h3>Bujur Sangkar</h3>
             <p id="temaRumus">Rumus Luas Persegi Yaitu : </p>
             <p id="rumus">L = S x S</p>
@@ -37,14 +40,17 @@
                 <p id="Keterangan">L = Luas </p>
                 <p>S = Sisi </p>
             </span>
-            <div class="field">
+            <div id="field">
                 <h1 id="temaDua">Hitung Luas Persegi</h1>
                 <input type="number" name="sisi" id="sisi" placeholder="Nilai sisi"><br>
+                <div id="result">
+                    <!--Menampilkan Hasil-->
+                </div>
                 <button id="tombolHasil" onclick="Hitung()">click</button>
-                <br><br><br><br>
+                <br><br>
+                <button id="ulang" onclick="location.reload()" value="Reset">Reset</button>
             </div>
         </div>
-    </form>
     </div>
 </body>
 <script src="js/script.js"></script>

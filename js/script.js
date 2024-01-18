@@ -1,4 +1,3 @@
-var a= 0;
 
 function temaLuas() {
     document.getElementById("temaHitung").innerHTML = "Luas Persegi";
@@ -26,13 +25,32 @@ function temaPanjang() {
     Keterangan.innerHTML = "K = Keliling";
 }
 
-
-console.log(temaLuas(a))
-
 function Hitung(){
-    if(temaLuas(a) = 1){
-        console.log("halo")
+    var Sisi = parseFloat(document.getElementById("sisi").value);
+
+    if (isNaN(Sisi) || Sisi <= 0) {
+        alert("Masukkan panjang sisi yang valid.");
+        return;
+      }
+    console.log(Sisi)
+    var calculationType = document.querySelector('input[name="calculationType"]:checked').value;
+    console.log(calculationType)
+    var area, parimeter;
+    if(calculationType === "luas"){
+        area = Sisi * Sisi;
+        parimeter = null;
     }else{
-        console.log("hai")
+        parimeter = 4 * Sisi;
+        area = null;
     }
+    var resultElement = document.getElementById("result");
+
+    var resultHTML = `<p>Sisi = ${Sisi}</p>`;
+    if (calculationType === "luas") {
+      resultHTML += `<p>Sisi x Sisi = ${Sisi} x ${Sisi} = ${area}</p>`;
+    } else {
+      resultHTML += `<p>4 x Sisi = 4 x ${Sisi} = ${parimeter}</p>`;
+    }
+    resultElement.innerHTML = resultHTML;
 }
+
