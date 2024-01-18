@@ -131,8 +131,8 @@ p {
 
 .field #ulang {
     margin: 8px 0px 8px 0px;
-    border: 12px solid yellow;
-    background-color: yellow;
+    border: 12px solid orange;
+    background-color: orange;
     border-radius: 12px;
     color: white;
     size: 10px;
@@ -140,7 +140,7 @@ p {
 }
 
 .field #ulang:active {
-    background-color: yellow;
+    background-color: orange;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
