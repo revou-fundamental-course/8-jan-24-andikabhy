@@ -32,9 +32,8 @@ function Hitung(){
         alert("Masukkan panjang sisi yang valid.");
         return;
       }
-    console.log(Sisi)
+   
     var calculationType = document.querySelector('input[name="calculationType"]:checked').value;
-    console.log(calculationType)
     var area, parimeter;
     if(calculationType === "luas"){
         area = Sisi * Sisi;
